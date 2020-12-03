@@ -8,6 +8,6 @@ services:
       - "1433:1433"
     environment: 
       - "ACCEPT_EULA=Y"
-      - "SA_PASSWORD=Tcpip123."
+      - "SA_PASSWORD=${SA_PASSWORD}"
     volumes: 
       - "./Data:/var/opt/mssql/data"
